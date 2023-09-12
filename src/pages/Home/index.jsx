@@ -1,12 +1,12 @@
 import {useEffect,useState,React} from 'react'
-import {Link} from 'react-router-dom'
+import {Link, useNavigate} from 'react-router-dom'
 import api from "../../services/api"
 import "./Home.css"
 import Loading from '../../components/loading/loading'
 
 const Home = () => {
 
-
+  const nagavigate=useNavigate()
   const [filmes,setFilmes]=useState([])
   const [loading,setLoading]=useState(true)
  
@@ -38,11 +38,14 @@ const Home = () => {
     )
     
   }
+  function handleClick(id){
+    nagavigate(`/filme/${id}`)
+  }
   return (
     <article className='filmes'>
         {filmes.map((filme)=>(
            
-          <div className='filme-container' key={filme.id}>
+          <div onClick={()=>handleClick(filme.id)} className='filme-container' key={filme.id}>
             <h1>{filme.title}</h1>
             <img src={`https://image.tmdb.org/t/p/original/${filme.poster_path}`} alt={filme.title}  />
             <Link className='container-link' to={`/filme/${filme.id}`} >Acessar</Link>
