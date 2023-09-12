@@ -1,0 +1,18 @@
+.loader{
+    width:100wh;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@keyframes loading {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+.loading-anime{
+	animation: loading 2s linear infinite;
+}

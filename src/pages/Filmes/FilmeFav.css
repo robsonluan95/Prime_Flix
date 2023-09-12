@@ -1,0 +1,90 @@
+.filmeFav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin: 0 auto;
+    width: 800px;
+    height: 300px;
+    border: 1px solid #acacac;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+.filmeFav img{
+
+    border-top-left-radius:15px ;
+    border-bottom-left-radius:15px ;
+    width: calc(100% - 50%);
+    height: 100%;
+    object-fit:cover;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+
+}
+.filmeFav h1{
+    font: 1.2em sans-serif;
+}
+
+.container-conteudo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.fundo-filme-container{
+    border-top-right-radius:15px ;
+    height: 50%;
+    background-color: #113461;
+    display: flex;
+    align-items: center;
+}
+.fundo-filme-container h1{
+    margin-left: 10px;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+.container-indece{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 50%;
+    padding: 10px;
+}
+.container-botoes{
+    display: flex;
+    width: 100%;
+    height: 10%;
+    
+}
+.container-botoes button:hover{
+    transition: all 0.5s;
+    scale: 1.1;
+}
+.btn-excluir{
+    width: 50%;
+    color: #fff;
+    background:#eb6240 !important;
+    border-bottom-right-radius:15px ;
+    border: none;
+    cursor: pointer;
+}
+.btn-detalhes{
+    width: 50%;
+    color: #fff;
+    background:#385f9b !important;
+    border: none;
+    cursor: pointer;
+}
+.container-texto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vh;
+    height: calc(100vh - 60px);
+    background-color: #eb6240;
+}
+.container-texto p{
+  font-size: 28px;
+}
