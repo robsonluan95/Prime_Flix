@@ -30,7 +30,7 @@ const Filmes = () => {
   }
   console.log(FilmesFav)
 
-  if(FilmesFav===FilmesFav.length){
+  if(FilmesFav.length===0){
     return(
       <div className='container-texto'>
         <p>Não há filmes favoritos</p>

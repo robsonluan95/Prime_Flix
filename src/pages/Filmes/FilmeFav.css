@@ -78,12 +78,13 @@
     cursor: pointer;
 }
 .container-texto{
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100vh;
     height: calc(100vh - 60px);
-    background-color: #eb6240;
+
 }
 .container-texto p{
   font-size: 28px;
