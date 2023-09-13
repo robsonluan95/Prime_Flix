@@ -6,6 +6,7 @@
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    width: 100%;
 }
 .filmeDetails h1{
   font-size:1.8em;

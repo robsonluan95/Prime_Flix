@@ -20,10 +20,9 @@ const Filmes = () => {
   }
   function handleDelete(filmeid) {
     toast.success("Filme removido com sucesso!")
-    // Filtrando a lista de filmes para manter apenas aqueles que têm um ID diferente do filme a ser excluído
+  
     const listaFilmes = FilmesFav.filter(item => item.id !== filmeid);
   
-    // Atualizando o localStorage com a nova lista de filmes
     localStorage.setItem('@filmesFav', JSON.stringify(listaFilmes));
   
     setFilmeFav(listaFilmes);
@@ -45,7 +44,7 @@ const Filmes = () => {
               <img src={`https://image.tmdb.org/t/p/original/${filme.backdrop_path}`} alt={filme.title}  />
               
               <div className='container-conteudo'>
-                <div className='fundo-filme-container'><h1>{filme&&(<h1>{filme.title}</h1>)}</h1> </div>
+                <div className='fundo-filme-container'>{filme&&(<h1 className='name-filme'>{filme.title}</h1>)} </div>
                 
                 <div className='container-indece'>
                   <div><span>Avaliação: </span><span className='indice'>{filme.vote_average.toFixed(2)}</span></div>

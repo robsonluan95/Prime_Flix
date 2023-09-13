@@ -4,7 +4,7 @@
     justify-content: space-between;
     text-align: center;
     margin: 0 auto;
-    width: 800px;
+    max-width: 800px;
     height: 300px;
     border: 1px solid #acacac;
     border-radius: 15px;
@@ -14,7 +14,7 @@
 
     border-top-left-radius:15px ;
     border-bottom-left-radius:15px ;
-    width: calc(100% - 50%);
+    width: 50%;
     height: 100%;
     object-fit:cover;
     display: flex;
@@ -22,12 +22,12 @@
     margin: 0 auto;
 
 }
-.filmeFav h1{
-    font: 1.2em sans-serif;
+.fundo-filme-container .name-filme{
+    font-size: 1.5em;
 }
 
 .container-conteudo{
-    width: 100%;
+    width: 80%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -35,6 +35,7 @@
 }
 .fundo-filme-container{
     border-top-right-radius:15px ;
+    max-width: 100%;
     height: 50%;
     background-color: #113461;
     display: flex;
