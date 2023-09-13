@@ -1,3 +1,4 @@
+
 .filmeFav{
     display: flex;
     align-items: center;
@@ -81,6 +82,7 @@
 .container-texto{
     margin: 0 auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -91,4 +93,19 @@
 }
 .container-texto p{
   font-size: 1.8em;
+}
+.container-button{
+    width: 100%;
+    display: flex;
+    margin-top: 15px;
+}
+.btn-voltar{
+    margin: 0 auto;
+    border-radius: 2px;
+    width: 10%;
+    height: 2.5em;
+    color: #fff;
+    background:#385f9b !important;
+    border: none;
+    cursor: pointer;
 }

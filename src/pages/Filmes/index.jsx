@@ -27,18 +27,22 @@ const Filmes = () => {
   
     setFilmeFav(listaFilmes);
   }
-  console.log(FilmesFav)
+  function handleNavigateBack(){
+    navigate(`/`)
+    
+  }
 
   if(FilmesFav.length===0){
     return(
       <div className='container-texto'>
         <p>Não há filmes favoritos</p>
+        <button onClick={()=>handleNavigateBack()} className='btn-voltar'>↩️ Voltar</button>
       </div>
     )
   }
 
   return (
-    <div>
+    <div className='container-center'>
         {FilmesFav?(FilmesFav.map((filme)=>(
             <div className='filmeFav'>
               <img src={`https://image.tmdb.org/t/p/original/${filme.backdrop_path}`} alt={filme.title}  />
@@ -65,6 +69,10 @@ const Filmes = () => {
           </div>
         
         )}
+        <div className='container-button'>
+          <button onClick={()=>handleNavigateBack()} className='btn-voltar'>↩️ Voltar</button>
+        </div>
+       
     </div>
   )
 }
