@@ -97,12 +97,12 @@
 .container-button{
     width: 100%;
     display: flex;
-    margin-top: 15px;
+    margin: 20px auto;
 }
 .btn-voltar{
     margin: 0 auto;
     border-radius: 2px;
-    width: 20%;
+    width: 25%;
     height: 2.5em;
     color: #fff;
     background:#385f9b !important;
